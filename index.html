@@ -3,79 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mubeen Ahmed - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="hero">
-        <div class="hero-content">
-            <h1>Mubeen Ahmed</h1>
-            <p>Embedded Systems & IoT Enthusiast</p>
+        <div class="container">
+            <h1>Welcome to My World</h1>
+            <p>Your one-stop showcase for creativity, projects, and contact.</p>
+            <a href="#about" class="cta-button">Explore More</a>
         </div>
     </header>
-    
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#cpp-projects">C++ Projects</a></li>
-            <li><a href="#embedded-projects">Embedded Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <section id="home" class="about">
-        <h2>About Me</h2>
-        <p>I am an Electrical Engineer passionate about Embedded Systems, IoT, and C++ programming. I create innovative solutions that integrate hardware and software seamlessly.</p>
-    </section>
-
-    <section id="cpp-projects" class="projects-container">
-        <h2>C++ Projects</h2>
-        <div class="project-card">
-            <img src="images/cpp_project.jpg" alt="C++ Project">
-            <h3>Algorithm Optimization</h3>
-            <p>Implemented various algorithms in C++ to optimize system performance.</p>
-        </div>
-        <div class="project-card">
-            <img src="images/cpp_project2.jpg" alt="C++ Project">
-            <h3>Data Structures</h3>
-            <p>Developed efficient data structures to handle large-scale computations.</p>
-        </div>
-    </section>
-
-    <section id="embedded-projects" class="projects-container">
-        <h2>Embedded Projects</h2>
-        <div class="project-card">
-            <img src="images/embedded_project.jpg" alt="Embedded Systems">
-            <h3>Smart Energy Meter</h3>
-            <p>Designed a real-time power monitoring system using ESP32.</p>
-        </div>
-        <div class="project-card">
-            <img src="images/embedded_project2.jpg" alt="Embedded Systems">
-            <h3>IoT-based Automation</h3>
-            <p>Developed an IoT solution for smart home automation.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-container">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi! I'm [Your Name], a developer dedicated to creating impactful digital experiences.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="grid">
+                <div class="card">Project 1</div>
+                <div class="card">Project 2</div>
+                <div class="card">Project 3</div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Drop me a line at <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 Mubeen Ahmed | Embedded Systems & IoT Enthusiast</p>
+        <p>© 2025 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
 </html>
