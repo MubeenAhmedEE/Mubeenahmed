@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" role="banner">
         <div class="hero-content">
             <h1>Mubeen Ahmed</h1>
             <p>Embedded Systems & IoT Enthusiast | C++ Developer</p>
         </div>
     </header>
-    
-    <nav class="navbar">
+
+    <nav class="navbar" role="navigation">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="cpp_projects.html">C++ Projects</a></li>
@@ -25,28 +25,30 @@
         </ul>
     </nav>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am an Electrical Engineer passionate about Embedded Systems, IoT, and C++ programming. I create innovative solutions that integrate hardware and software seamlessly.</p>
-    </section>
+    <main>
+        <section class="about" role="region" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am an Electrical Engineer passionate about Embedded Systems, IoT, and C++ programming. I create innovative solutions that integrate hardware and software seamlessly.</p>
+        </section>
 
-    <section class="projects-container">
-        <h2>Featured Projects</h2>
-        <div class="project-card">
-            <img src="images/embedded_project.jpg" alt="Embedded Systems">
-            <h3>Embedded Systems</h3>
-            <p>Explore my work in microcontrollers and IoT applications.</p>
-            <a href="embedded_projects.html" class="btn">View Projects</a>
-        </div>
-        <div class="project-card">
-            <img src="images/cpp_project.jpg" alt="C++ Programming">
-            <h3>C++ Programming</h3>
-            <p>Check out my C++ codes, algorithms, and problem-solving approaches.</p>
-            <a href="cpp_projects.html" class="btn">View Projects</a>
-        </div>
-    </section>
+        <section class="projects-container" role="region" aria-labelledby="featured-projects-heading">
+            <h2 id="featured-projects-heading">Featured Projects</h2>
+            <div class="project-card">
+                <img src="images/embedded_project.jpg" alt="Embedded Systems">
+                <h3>Embedded Systems</h3>
+                <p>Explore my work in microcontrollers and IoT applications.</p>
+                <a href="embedded_projects.html" class="btn">View Projects</a>
+            </div>
+            <div class="project-card">
+                <img src="images/cpp_project.jpg" alt="C++ Programming">
+                <h3>C++ Programming</h3>
+                <p>Check out my C++ codes, algorithms, and problem-solving approaches.</p>
+                <a href="cpp_projects.html" class="btn">View Projects</a>
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 Mubeen Ahmed | Embedded Systems & IoT Enthusiast</p>
     </footer>
 </body>
